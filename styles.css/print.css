@@ -1,0 +1,50 @@
+/* 
+Name: Mateus de Abreu
+Date: 05/09/2025
+Description: This is the style page that determines how the index.html file and the another_page.html file appear once they are printed.
+*/
+@media print {
+
+    /* First Page */
+    #header_links {
+        display: none;
+    }
+
+    #main_body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #presentation {
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 1px black;
+        -webkit-text-shadow: 1px 1px 1px black;
+    }
+
+    /* Another Page */
+    #return {
+        display: none;
+    }
+
+    #another_main_body img {
+        height: 200px;
+        width: 300px;
+    }
+
+    #credits {
+        display: none;
+    }
+
+    #credits_print {
+        display: block;
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 1px black;
+        -webkit-text-shadow: 1px 1px 1px black;
+    }
+
+    /* To show url of all links */
+    a::after {
+        content: " (" attr(href) ") ";
+    }
+
+}

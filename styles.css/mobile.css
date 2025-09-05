@@ -1,0 +1,50 @@
+/* 
+Name: Mateus de Abreu
+Date: 05/09/2025
+Description: This is the style page for determining the mobile appearance for index.html and another_page.html
+*/
+
+/* Mobile design */
+@media only screen and (max-width:485px) {
+
+    #headerLinks {
+        width: 100%;
+    }
+
+    #links li {
+        display: inline-block;
+    }
+
+    #image {
+        height: 150%;
+        width: 100%;
+        border-radius: 15px;
+        /* z-index: 1; */
+    }
+
+    #main_body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #presentation {
+        max-width: 120%;
+    }
+
+    /* Another Page */
+    #another_body {
+        background-image: url(images/blue_coral.jpg);
+        background-size: 130%;
+        background-repeat: repeat-y;
+    }
+
+    #another_body img {
+        /* The images do not fit the mobile style, so I decided to take them out. The text still fits the water theme of the page. */
+        display: none;
+    }
+
+    #credits{
+        margin-bottom: 90%;
+    }
+
+}

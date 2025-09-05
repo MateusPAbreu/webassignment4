@@ -1,0 +1,141 @@
+/* 
+Name: Mateus de Abreu
+Date: 05/09/2025
+Description: This is the main style page for the index.html file, and overall the style page that determines the apperance of all the web pages of the site.
+*/
+
+/* First Page */
+/* Header */
+
+#image {
+    height: 400px;
+    width: 600px;
+    border-radius: 15px;
+}
+
+#links li {
+    display: inline-block;
+}
+
+#links li a {
+    display: block;
+    color: black;
+    margin: 0px -1px 0px -1px;
+    /*This way the borders are connected, there is no gap between them*/
+    text-decoration: none;
+    border-style: solid;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    -webkit-font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5px;
+    /* border-right-style: none; */
+}
+
+#links li a:hover {
+    color: yellow;
+}
+
+p {
+    float: right;
+    padding: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    -webkit-font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Body */
+#first_body {
+    background-color: rgb(100, 152, 187);
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    -webkit-text-shadow: 1px 1px 1px black;
+    display: flex;
+    flex-direction: column;
+}
+
+#main_body{
+    display: flex;
+    flex-direction: row;
+}
+
+#p1 a{
+    text-decoration: none;
+    color: white;
+}
+
+#p1 a:hover{
+    text-decoration: none;
+    color: yellow;
+}
+
+#caption1 {
+    margin-top: -30px;
+    display: flex;
+    justify-content: end;
+}
+
+/* Second Page */
+/* As this assignment didn't require a lot of pages, I considered to be simpler to use one css file instead of two */
+#another_body {
+    background-image: url(images/blue_coral.jpg);
+    background-size: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    -webkit-font-family: Georgia, 'Times New Roman', Times, serif;
+    /* background-repeat:initial; */
+}
+
+#another_body a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px black;
+    -webkit-text-shadow: 1px 1px 1px black;
+}
+
+#another_body a:hover {
+    text-decoration: none;
+    color: yellow;
+}
+
+#another_header {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px black;
+    -webkit-text-shadow: 1px 1px 1px black;
+}
+
+#surf {
+    float: right;
+    clear: left;
+}
+
+#diver {
+    float: right;
+    clear: right;
+}
+
+#surf,
+#diver {
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    min-width: 250px;
+}
+
+#another_main_body p {
+    color: aliceblue;
+    text-shadow: 1px 1px 1px black;
+    -webkit-text-shadow: 1px 1px 1px black;
+    min-width: 300px;
+}
+
+#credits{
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px black;
+    -webkit-text-shadow: 1px 1px 1px black;
+    margin-bottom: auto;
+}
+
+#credits_print{
+    display: none;
+}

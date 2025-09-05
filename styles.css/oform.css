@@ -1,0 +1,63 @@
+/* 
+Name: Mateus de Abreu
+Date: 05/09/2025
+Description: This is the style page for determining specific behavior of the birthday page, determining it as a column, with highlights over hovering, 
+and defining the mobile appearance.
+*/
+
+#video,
+#audio,
+#history,
+#header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    padding-bottom: 5px;
+}
+
+#video video {
+    height: 300px;
+}
+
+#history a img {
+    width: 350px;
+    height: 130px;
+}
+
+#history p {
+    /* This paragraph is present so a mobile user can understand what the image/link is about, it is unnecessary on a desktop screen */
+    display: none;
+}
+
+/* Highlights */
+#header:hover {
+    text-decoration: underline;
+}
+
+#video:hover {
+    background-color: rgb(161, 70, 216);
+    text-shadow: 1px 1px rgb(211, 175, 55);
+}
+
+#audio:hover {
+    background-color: rgb(0, 191, 255);
+    text-shadow: 1px 1px rgb(211, 175, 55);
+}
+
+#history:hover {
+    background-color: rgb(220, 20, 60);
+    text-shadow: 1px 1px rgb(211, 175, 55);
+}
+
+/* Mobile screen */
+@media only screen and (max-width:480px) {
+    #video video {
+        height: 150px;
+    }
+
+    #history p {
+        display: inline;
+    }
+}
